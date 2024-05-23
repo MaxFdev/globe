@@ -21,11 +21,9 @@ const Hero = () => {
             className="w-full h-full relative"
             particleColor="#FFFFFF"
           />
-          <Suspense>
             <div className="w-full h-screen flex flex-col items-center justify-end -translate-y-[400px]">
               <HeroGlobe />
             </div>
-          </Suspense>
         </div>
       </Suspense>
     </div>
