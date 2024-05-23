@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Next Project",
-  description: "Testing next.js features",
+  title: "Next Globe Project",
+  description: "A Next.js project with a spinning globe",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <nav className="flex justify-center align-middle items-center bg-black p-1 text-white gap-2">
+          <p>Something break?</p>
+          <a href="" className="border-2 rounded p-1 border-cyan-300">Reload ↺</a>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }

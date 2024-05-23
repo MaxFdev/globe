@@ -1,31 +1,30 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./Globe").then((m) => m.World), {
   ssr: false,
 });
 
-export function HeroGlobe() {
+export async function HeroGlobe() {
   const globeConfig = {
-    pointSize: 4,
+    pointSize: 2,
     globeColor: "#0c6a8c",
     showAtmosphere: true,
     atmosphereColor: "#8ce1ff",
-    atmosphereAltitude: 0.1,
+    atmosphereAltitude: 0.15,
     emissive: "#1daab1",
     emissiveIntensity: 0.1,
     shininess: 1,
     polygonColor: "rgba(255,255,255,0.7)",
-    ambientLight: "#49ffd7",
+    ambientLight: "#ffffff",
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
     pointLight: "#ffffff",
-    arcTime: 1000,
-    arcLength: 0.9,
+    arcTime: 1500,
+    arcLength: 0.5,
     rings: 1,
-    maxRings: 5,
+    maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
     autoRotateSpeed: 1,
