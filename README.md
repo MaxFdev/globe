@@ -1,3 +1,3 @@
-# Next.js Project
+# Next.js Globe Project
 
-This is a basic web app project using [Next.js](https://nextjs.org/).
+This is a basic web app that displays a 3d globe using [Next.js](https://nextjs.org/) and [aceternity](https://aceternity.com).
