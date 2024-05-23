@@ -14,7 +14,12 @@ export default function RootLayout({
       <body>
         <nav className="flex justify-center align-middle items-center bg-black p-1 text-white gap-2">
           <p>Something break?</p>
-          <a href="" className="border-2 rounded p-1 border-cyan-300">Reload ↺</a>
+          <a
+            href=""
+            className="border-2 rounded p-1 border-cyan-300"
+          >
+            Reload ↺
+          </a>
         </nav>
         {children}
       </body>
